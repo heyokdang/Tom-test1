@@ -68,25 +68,17 @@
           <div class="groupsign clearfix">
             <form class="form-signin">
               <h2 class="form-signin-heading">Login to <b>Bambizo</b></h2>
-              <p class="hand">
-                <a href="#" alt=""><img src="img/hand.png" alt="hand"></a>
-              </p>
               <div class="contentsign">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
                 
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">SIGNUP<span class="hidenow"> NOW</span></button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
 
-                <p class="haveandaccount">
-                  Already have an account? <a href="#">Login</a>
-                </p>
-                <p class="termsofservice">
-                  Creating an account means you’re okay with Bambizo's
-                  <br>
-     <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-                </p>
+                <a class="forgetpassword" href="#">Forgot Your Password?</a>
+                <a class="signuplink" href="#">Sign Up</a>
+                
               </div>
             </form>
 
@@ -126,7 +118,6 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-    
 
     $( document ).ready(function() {
       if (($( window ).height() - $('.groupsign').height())/2 > 0) {

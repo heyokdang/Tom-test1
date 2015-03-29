@@ -34,11 +34,11 @@ body {
 
 .downloadlinks, .form-signin {
   max-width: 392px;
-  padding: 17px 0 5px;
+  padding: 40px 0 60px;
   margin: 0 auto;
   float:right;
 }
-.downloadlinks { background-color: #135179; padding-top: 68px; padding-bottom: 94px; padding-right: 30px; padding-left: 30px; }
+.downloadlinks { background-color: #135179; padding:38px 30px 58px; }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
@@ -61,17 +61,12 @@ body {
 }
 
 .form-signin input[type="email"] {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 0;
 }
 
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-radius: 0;
-}
-
-.form-signin input[type="text"] {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 0;
 }
 
@@ -79,11 +74,9 @@ body {
 .container { height: 100%; }
 
 .form-signin-heading, .form-signin-heading b {  font-weight: 600 !important; font-size: 20px; color: #006cb0; text-align: center; }
-.form-signin-heading { background: #e6e9eb; margin: 0 0 20px !important; padding: 10px 0;}
-.form-signin { background-color: #f2f6f8; }
+.form-signin-heading { background: #e6e9eb; margin: 0 0 40px !important; padding: 10px 0;}
+.form-signin { background-color: #f2f6f8; width: 392px }
 button.btn-primary { font-size: 16px; color: #fff; padding: 15px 16px; border-radius: 0; border: 1px solid #e7e7e7;}
-.haveandaccount { text-align: right;margin-top: 10px; }
-.termsofservice { font-size: 12px; margin-top: 20px; white-space: nowrap; text-align: center; }
 .form-signin .form-control, button.btn-primary, .haveandaccount, .termsofservice {
   
 }
@@ -102,7 +95,8 @@ a { color:#006cb0; }
 }
 .downloadlinks .links a img { text-align: left; vertical-align: baseline; padding: 0 5px;}
 .youcandownload { display: none;}
-p.hand { display: none;}
+.forgetpassword {float:left; margin-top: 10px; color: #3c3d3d;}
+.signuplink {float: right; margin-top: 10px; color: #3c3d3d;}
 
 /* For mobile devices */
 @media screen and (max-width: 991px) {
@@ -112,14 +106,16 @@ p.hand { display: none;}
     background-image: url(../img/login-background.jpg);
     
   }
-  .downloadlinks, .form-signin { float: none !important; margin: 0 auto; }
+  .downloadlinks, .form-signin { float: none !important; margin: 0 auto; width: auto; }
+
+  .form-signin { padding: 40px 0 100px; }
   .termsofservice { display: none; }
   .contentsign { margin-left: 12px;
   margin-right: 12px; }
   .form-signin-heading { display: none; }
   .col-md-12 { padding-left: 12px; padding-right: 12px}
   .downloadlinks { background: none; padding-bottom: 15px;
-    padding-top: 15px;}
+    padding-top: 15px; padding-left: 0; padding-right: 0;}
   .downloadlinks div.logo { display: none;}
   .ucandownload { display: none; }
   .youcandownload {
