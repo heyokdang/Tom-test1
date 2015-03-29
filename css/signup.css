@@ -1,0 +1,135 @@
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  font-family: "open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #3c3d3d;
+  /* Location of the image */
+  background-image: url(../img/login-background.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#086fa4;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+
+
+.downloadlinks, .form-signin {
+  max-width: 392px;
+  padding: 17px 0 5px;
+  margin: 0 auto;
+  float:right;
+}
+.downloadlinks { background-color: #135179; padding-top: 68px; padding-bottom: 94px; padding-right: 30px; padding-left: 30px; }
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 22px;
+  border: 1px solid #e7e7e7;
+  box-shadow: none;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+.groupsign { max-width: 784px; margin:0 auto; margin-top: 40px; }
+.container { height: 100%; }
+
+.form-signin-heading, .form-signin-heading b {  font-weight: 600 !important; font-size: 20px; color: #006cb0; text-align: center; }
+.form-signin-heading { background: #e6e9eb; margin: 0 0 20px !important; padding: 10px 0;}
+.form-signin { background-color: #f2f6f8; }
+button.btn-primary { font-size: 16px; color: #fff; padding: 15px 16px; border-radius: 0; border: 1px solid #e7e7e7;}
+.haveandaccount { text-align: right;margin-top: 10px; }
+.termsofservice { font-size: 12px; margin-top: 20px; white-space: nowrap; text-align: center; }
+.form-signin .form-control, button.btn-primary, .haveandaccount, .termsofservice {
+  
+}
+.contentsign { margin-left: 50px;
+  margin-right: 50px; }
+a { color:#006cb0; }
+.downloadlinks div.logo {}
+.downloadlinks div.logo a.logo { display: block; text-align: center;}
+.ucandownload { color: #fff;
+    font-size: 25px;
+    text-align: center; margin-top: 20px; margin-bottom: 20px; }
+.downloadlinks .links { text-align: center; }
+.downloadlinks .links a {
+    margin:0;
+    padding:0;
+}
+.downloadlinks .links a img { text-align: left; vertical-align: baseline; padding: 0 5px;}
+.youcandownload { display: none;}
+p.hand { display: none;}
+
+/* For mobile devices */
+@media screen and (max-width: 991px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(../img/login-background.jpg);
+    
+  }
+  .downloadlinks, .form-signin { float: none !important; margin: 0 auto; }
+  .termsofservice { display: none; }
+  .contentsign { margin-left: 12px;
+  margin-right: 12px; }
+  .form-signin-heading { display: none; }
+  .col-md-12 { padding-left: 12px; padding-right: 12px}
+  .downloadlinks { background: none; padding-bottom: 15px;
+    padding-top: 15px;}
+  .downloadlinks div.logo { display: none;}
+  .ucandownload { display: none; }
+  .youcandownload {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    text-align: center; margin-top: 20px; margin-bottom: 10px;
+  }
+  .downloadlinks .links a { }
+  .hidenow { display: none;}
+  .downloadlinks, .form-signin { padding-top: 12px;}
+  p.hand { padding-bottom: 12px; text-align: center; display: block;}
+}
