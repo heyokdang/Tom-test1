@@ -74,7 +74,7 @@ body {
 .container { height: 100%; }
 
 .form-signin-heading, .form-signin-heading b {  font-weight: 600 !important; font-size: 20px; color: #006cb0; text-align: center; }
-.form-signin-heading { background: #e6e9eb; margin: 0 0 40px !important; padding: 10px 0;}
+.form-signin-heading { background: #e6e9eb; margin: 0 0 10px !important; padding: 10px 0;}
 .form-signin { background-color: #f2f6f8; width: 392px }
 button.btn-primary { font-size: 16px; color: #fff; padding: 15px 16px; border-radius: 0; border: 1px solid #e7e7e7;}
 .form-signin .form-control, button.btn-primary, .haveandaccount, .termsofservice {
@@ -97,6 +97,7 @@ a { color:#006cb0; }
 .youcandownload { display: none;}
 .forgetpassword {float:left; margin-top: 10px; color: #3c3d3d;}
 .signuplink {float: right; margin-top: 10px; color: #3c3d3d;}
+.notification-signin { text-align: center; color: red; }
 
 /* For mobile devices */
 @media screen and (max-width: 991px) {

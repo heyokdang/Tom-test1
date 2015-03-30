@@ -79,7 +79,7 @@ body {
 .container { height: 100%; }
 
 .form-signup-heading, .form-signup-heading b {  font-weight: 600 !important; font-size: 20px; color: #006cb0; text-align: center; }
-.form-signup-heading { background: #e6e9eb; margin: 0 0 20px !important; padding: 10px 0;}
+.form-signup-heading { background: #e6e9eb; margin: 0 0 0px !important; padding: 10px 0;}
 .form-signup { background-color: #f2f6f8; }
 button.btn-primary { font-size: 16px; color: #fff; padding: 15px 16px; border-radius: 0; border: 1px solid #e7e7e7;}
 .haveandaccount { text-align: right;margin-top: 10px; }
@@ -103,6 +103,8 @@ a { color:#006cb0; }
 .downloadlinks .links a img { text-align: left; vertical-align: baseline; padding: 0 5px;}
 .youcandownload { display: none;}
 p.hand { display: none;}
+.notification-signup { text-align: left; color: red; margin: 0; }
+
 
 /* For mobile devices */
 @media screen and (max-width: 991px) {
