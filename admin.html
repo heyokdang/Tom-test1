@@ -9,13 +9,13 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Signup Bambizo</title>
+    <title>Bambizo admin home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/signup.css" rel="stylesheet">
+    <link href="css/admin-home.css" rel="stylesheet">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
 
@@ -29,6 +29,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/validator.js"></script>
+
   </head>
 
   <body>
@@ -36,35 +37,23 @@
     <div class="container">
   
           <div class="groupsign clearfix">
-            <form class="form-signup">
-              <h2 class="form-signup-heading">Signup to <b>Bambizo</b></h2>
-              <p class="hand">
-                <a href="#" alt=""><img src="img/hand.png" alt="hand"></a>
-              </p>
-              <div class="contentsign">
-                <p class="notification-signup" id="confirmMessage" style="color:#f2f6f8">
+            <form class="form-signin">
+              <h2 class="form-signin-heading">Login to <b>Bambizo</b></h2>
+              <p class="notification-signin" style="color:#f2f6f8">
                   Username & Password is not matched.
                 </p>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+              <div class="contentsign">
+
+                <input type="email" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
                 
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
+
+                <a class="forgetpassword" href="#">Forgot Your Password?</a>
+                <a class="signuplink" href="#">Sign Up</a>
                 
-                <label for="inputPasswordConfirm" class="sr-only">Re - Password</label>
-                <input type="password" name="inputPasswordConfirm" id="inputPasswordConfirm" class="form-control" onkeyup="checkPass(); return false;" placeholder="Re - Password" required>
-                <label for="inputName" class="sr-only">Your Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
-
-                <button class="btn btn-lg btn-primary btn-block" type="submit">SIGNUP<span class="hidenow"> NOW</span></button>
-
-                <p class="haveandaccount">
-                  Already have an account? <a href="#">Login</a>
-                </p>
-                <p class="termsofservice">
-                  Creating an account means you’re okay with Bambizo's
-                  <br>
-     <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-                </p>
               </div>
             </form>
 
@@ -104,7 +93,6 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-    
 
     $( document ).ready(function() {
       if (($( window ).height() - $('.groupsign').height())/2 > 0) {

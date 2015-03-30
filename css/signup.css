@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
   float:right;
 }
-.downloadlinks { background-color: #135179; padding-top: 68px; padding-bottom: 94px; padding-right: 30px; padding-left: 30px; }
+.downloadlinks { background-color: #135179; padding-top: 68px; padding-bottom: 113px; padding-right: 30px; padding-left: 30px; }
 .form-signup .form-signup-heading,
 .form-signup .checkbox {
   margin-bottom: 10px;
@@ -103,7 +103,7 @@ a { color:#006cb0; }
 .downloadlinks .links a img { text-align: left; vertical-align: baseline; padding: 0 5px;}
 .youcandownload { display: none;}
 p.hand { display: none;}
-.notification-signup { text-align: left; color: red; margin: 0; }
+.notification-signup { text-align: left; color: red; margin:10px 0; }
 
 
 /* For mobile devices */
