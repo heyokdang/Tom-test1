@@ -27,7 +27,6 @@ body {
 .navbar-inverse {
     background-color: #343f4b;
 }
-.navbar-header {}
 .menutopright { background: #222c38; height: 70px; padding-left: 25px;}
 .menutopright .nav a { padding:25px 30px;}
 .menutopright .nav li.help a { padding-right: 40px }
@@ -148,11 +147,7 @@ body {
     padding-right: 40px;
     padding-left: 40px;
   }
-  .navbar-toggle {
-    display: block;
-  }
 }
-
 .main .page-header {
   margin-top: 0;
 }
@@ -160,10 +155,7 @@ body {
 .navbar-brand { height: 70px; background: #222c38 }
 
 
-@media (max-width: 991px) {
-  .navbar-toggle {
-    display: block;
-  }
+@media (max-width: 767px) {
   .menutopright {
     display: none;
   }
@@ -287,7 +279,8 @@ body {
   .right-toggle.navbar-toggle { background: #222c38; }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  .col-md-8.col-md-offset-1 { margin-left: }
     #accordion .panel-default {
     border:0;
   }
@@ -299,6 +292,83 @@ body {
       margin-bottom: 0px;
   }
    #navbar,#navbar2  { display: none !important; }
+  .sidebar {
+    z-index: 1000;
+    display: block;
+    padding: 0px;
+    background-color: #006cb0;
+    border-right: 0px solid #eee;
+  }
+  .sidebar2 {
+    z-index: 1000;
+    display: block;
+    padding: 40px 0 0;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+  .sidebar { background: #006cb0; padding: 0 0 0 1px; border: 0; margin: 0 0px;}
+
+  .sidebar .nav-sidebar {
+    margin-right: 0px; /* 20px padding + 1px border */
+    margin-bottom: 12px;
+    margin-left: 0px;
+  
+  }
+  .sidebar .nav-sidebar > li {
+    border-bottom: 1px solid #1080c6;
+    padding-left: 10px;
+  }
+  .sidebar .nav-sidebar > li > a {
+    padding: 18px 32px;
+    text-align: left;
+  }
+
+  .sidebar .nav-sidebar li.home-link { background: none; }
+  .sidebar .nav-sidebar li.parents-link { background: none;}
+  .sidebar .nav-sidebar li.settings-link { background: none;}
+
+  .sidebar .nav-sidebar li.home-link.active { background: none; }
+  .sidebar .nav-sidebar li.parents-link.active { background: none;}
+  .sidebar .nav-sidebar li.settings-link.active { background: none;}
+
+
+  .sidebar .nav-sidebar li.home-link a { background: url(../img/homeicon.png) left center no-repeat; }
+  .sidebar .nav-sidebar li.parents-link a { background: url(../img/parentsicon.png) left center no-repeat;}
+  .sidebar .nav-sidebar li.settings-link a { background: url(../img/settingsicon.png) left center no-repeat;}
+
+  .sidebar .nav-sidebar li.home-link.active a { background: url(../img/homeicon_hover.png) left center no-repeat; }
+  .sidebar .nav-sidebar li.parents-link.active a { background: url(../img/parentsicon_hover.png) left center no-repeat;}
+  .sidebar .nav-sidebar li.settings-link.active a { background: url(../img/settingsicon_hover.png) left center no-repeat;}
+
+  .sidebar .nav-sidebar > .active > a,
+  .sidebar .nav-sidebar > .active > a:hover,
+  .sidebar .nav-sidebar > .active > a:focus
+  {
+    color: #fff;
+    outline: none;
+  }
+  .sidebar .nav-sidebar > li > a,
+  .sidebar .nav-sidebar > li > a:hover,
+  .sidebar .nav-sidebar > li > a:focus {
+    color: #0d93e8;
+    outline: none;
+  }
+  .sidebar .thumbnail { background: none; border: 0; text-align: center; margin-bottom: 0;}
+  .sidebar .thumbnail img { width: 44px; border:2px solid #2a88a8; display: inline-block; margin-bottom: 14px; }
+  .sidebar .thumbnail .caption {
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    padding: 0 0 0 15px;
+    font-weight: 600;
+  }
+  .thumbnaildefault { display: none;}
+  .thumbnailmd { display: block;}
+  .sidebar .thumbnail .caption span { font-weight: 300; }
+}
+@media (min-width: 992px) {
+  .thumbnailmd { display: none;}
+  .thumbnaildefault { display: block;}
   .sidebar {
     position: fixed;
     top: 70px;
@@ -327,8 +397,73 @@ body {
     border-right: 1px solid #eee;
     width: 23.5%;
   }
-  .navbar-toggle {
-    display: none;
+  
+  
+
+  .sidebar { background: #006cb0; padding: 0 0 0 1px; border: 0; margin: 0 0px;}
+
+  .sidebar .nav-sidebar {
+  margin-right: 0px; /* 20px padding + 1px border */
+  margin-bottom: 50px;
+  margin-left: 0px;
   }
+  .sidebar .nav-sidebar > li {
+    border-bottom: 0px solid #1080c6;
+    padding-left: 0px;
+  }
+  .sidebar .nav-sidebar > li > a {
+    padding: 50px 0px 0;
+    text-align: center;
+  }
+
+  .sidebar .nav-sidebar li.home-link a { background: none; }
+  .sidebar .nav-sidebar li.parents-link a { background: none;}
+  .sidebar .nav-sidebar li.settings-link a { background: none;}
+
+  .sidebar .nav-sidebar li.home-link.active a { background: none; }
+  .sidebar .nav-sidebar li.parents-link.active a { background: none;}
+  .sidebar .nav-sidebar li.settings-link.active a { background: none;}
+
+  .sidebar .nav-sidebar li.home-link { background: url(../img/homeicon.png) center center no-repeat; }
+  .sidebar .nav-sidebar li.parents-link { background: url(../img/parentsicon.png) center center no-repeat;}
+  .sidebar .nav-sidebar li.settings-link { background: url(../img/settingsicon.png) center center no-repeat;}
+
+  .sidebar .nav-sidebar li.home-link.active { background: url(../img/homeicon_hover.png) center center no-repeat; }
+  .sidebar .nav-sidebar li.parents-link.active { background: url(../img/parentsicon_hover.png) center center no-repeat;}
+  .sidebar .nav-sidebar li.settings-link.active { background: url(../img/settingsicon_hover.png) center center no-repeat;}
+
+  .sidebar .nav-sidebar > .active > a,
+  .sidebar .nav-sidebar > .active > a:hover,
+  .sidebar .nav-sidebar > .active > a:focus,
+  .sidebar .nav-sidebar > li > a,
+  .sidebar .nav-sidebar > li > a:hover,
+  .sidebar .nav-sidebar > li > a:focus {
+    background: none;
+    color: #0d93e8;
+    font-weight: 600;
+  }
+
+  .sidebar .nav-sidebar > .active > a,
+  .sidebar .nav-sidebar > .active > a:hover,
+  .sidebar .nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-image: url(../img/openicon.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    outline: none;
+  }
+
+  .sidebar .thumbnail { background: none; border: 0;}
+  .sidebar .thumbnail img { width: 44px; border:2px solid #2a88a8; }
+  .sidebar .thumbnail .caption { color: #fff;
+      padding: 0;
+      text-align: center; font-weight: 600; }
+  .sidebar .thumbnail .caption span { font-weight: 300;}
+
+
+
+
+
+
 }
 
