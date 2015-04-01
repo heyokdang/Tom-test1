@@ -135,6 +135,26 @@ body {
   padding: 20px 0 20px 25px;
   display: block;
 }
+.pagination { background: #ececec; margin-top: 38px}
+.pagination li.prev {}
+.pagination li.prev a, 
+.pagination li.next a { border: 0; padding:0; }
+.pagination li.next {}
+.pagination li.next a { }
+.pagination li.active a { color: #343f4b;}
+.pagination > li > a, .pagination > li > span { background: none; border: 0; padding: 6px 39px; color: #d0d1d2; font-weight: 700;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus { background: none; }
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #d0d1d2;
+  border:0;
+}
+.titlehead { border-bottom: 1px solid #e7e4e4; margin-bottom: 25px;}
+.titlehead h2 { padding: 5px 0px; color: #006cb0; font-size: 18px; float: left; font-weight: 400; margin: 0;}
+.titlehead a {padding: 5px 0 5px 20px; float: right; color: #707578; font-size: 13px; background: url(../img/removeicondisable.png) left center no-repeat; margin: 0}
+.titlehead a.red {color: #ff0000; background: url(../img/removeiconenable.png) left center no-repeat;}
 /*
  * Main content
  */
@@ -144,8 +164,7 @@ body {
 }
 @media (min-width: 768px) {
   .main {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding:0;
   }
 }
 .main .page-header {
@@ -166,6 +185,8 @@ body {
     float: none;
     background: none;
   }
+
+  .col-xs-offset-1 { margin-left: 0}
 
   #navbar { background: #006cb0; padding: 0 0 0 1px; border: 0; margin: 0 -15px;}
 
@@ -280,6 +301,29 @@ body {
 }
 
 @media (min-width: 768px) {
+  .col-sm-15{
+    width:19%;
+    margin-left:0;
+    padding: 0;
+}
+  .placeholders {}
+
+  .placeholders .thumbnail { background: none; border: 0; text-align: center; margin-bottom: 0; padding: 0; float: left;}
+  .placeholders .thumbnail img { border: 1px solid #e6e6e6;
+    display: inline-block;
+    margin-bottom: 2px;
+    padding: 6px;
+    width: 88px;}
+  .placeholders .thumbnail .caption {
+    color: #676767;
+    padding: 0;
+    text-align: center;
+    padding: 0;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .placeholder { padding-bottom: 40px;}
+
   .col-md-8.col-md-offset-1 { margin-left: }
     #accordion .panel-default {
     border:0;
@@ -459,11 +503,5 @@ body {
       padding: 0;
       text-align: center; font-weight: 600; }
   .sidebar .thumbnail .caption span { font-weight: 300;}
-
-
-
-
-
-
 }
 
