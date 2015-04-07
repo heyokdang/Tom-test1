@@ -524,9 +524,15 @@ text-align: center;
   .sidebar .nav-sidebar li.parents-link a { background: none;}
   .sidebar .nav-sidebar li.settings-link a { background: none;}
 
-  .sidebar .nav-sidebar li.home-link.active a { background: none; }
-  .sidebar .nav-sidebar li.parents-link.active a { background: none;}
-  .sidebar .nav-sidebar li.settings-link.active a { background: none;}
+  .sidebar .nav-sidebar li.home-link.active a,
+  .sidebar .nav-sidebar li.parents-link.active a,
+  .sidebar .nav-sidebar li.settings-link.active a {
+    color: #fff;
+    background-image: url(../img/openicon.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    outline: none;
+  }
 
   .sidebar .nav-sidebar li.home-link { background: url(../img/homeicon.png) center center no-repeat; }
   .sidebar .nav-sidebar li.parents-link { background: url(../img/parentsicon.png) center center no-repeat;}

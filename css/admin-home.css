@@ -184,11 +184,47 @@ body {
 .main {
   padding: 20px;
 }
-@media (min-width: 768px) {
-  .main {
-    padding:0;
-  }
+
+.notifications {
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  box-shadow: 3px 0 4px 0 #efefef;
 }
+
+.notifications.from {
+
+}
+
+.notifications .from {
+  color: #393939;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0 0;
+  padding-top: 15px;
+}
+
+.notifications.to {
+  background: none repeat scroll 0 0 #daedf9;
+  border: 1px solid #efefef;
+  box-shadow: 0 3px 4px 0 #c9dae5 inset;
+}
+
+.notifications .title-notification { color: #555555;
+    font-size: 18px;}
+
+.notifications .content-notification { color: #858383; }
+
+.notifications.from .block-item {margin-bottom: 20px;
+    margin-left: 10px;}
+
+.notifications.to .block-item { margin-left: 50px; margin-bottom: 20px; }
+
+.notifications .sendtime { 
+    color: #999;
+    float: right;
+    font-size: 12px;}
+
+#pagination-demo { margin-left: -15px; margin-right: -15px; }
 .main .page-header {
   margin-top: 0;
 }
@@ -236,6 +272,12 @@ text-align: center;
     margin: 10% auto;
     background: none;
     padding: 7px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding:0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -376,8 +418,6 @@ text-align: center;
     margin-left:0;
     padding: 0;
   }
-
-
   .col-md-8.col-md-offset-1 { margin-left: }
     #accordion .panel-default {
     border:0;
@@ -524,9 +564,15 @@ text-align: center;
   .sidebar .nav-sidebar li.parents-link a { background: none;}
   .sidebar .nav-sidebar li.settings-link a { background: none;}
 
-  .sidebar .nav-sidebar li.home-link.active a { background: none; }
-  .sidebar .nav-sidebar li.parents-link.active a { background: none;}
-  .sidebar .nav-sidebar li.settings-link.active a { background: none;}
+  .sidebar .nav-sidebar li.home-link.active a,
+  .sidebar .nav-sidebar li.parents-link.active a,
+  .sidebar .nav-sidebar li.settings-link.active a {
+    color: #fff;
+    background-image: url(../img/openicon.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    outline: none;
+  }
 
   .sidebar .nav-sidebar li.home-link { background: url(../img/homeicon.png) center center no-repeat; }
   .sidebar .nav-sidebar li.parents-link { background: url(../img/parentsicon.png) center center no-repeat;}
