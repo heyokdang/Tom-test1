@@ -165,12 +165,14 @@ body {
 
    .placeholders {}
 
-  .placeholders .thumbnail { background: none; border: 0; text-align: center; margin-bottom: 0; padding: 0; float: left;}
-  .placeholders .thumbnail img { border: 1px solid #e6e6e6;
+  .placeholders .thumbnail { background: none; border: 0; text-align: center; margin-bottom: 35px; padding: 0; float: left; position: relative;}
+  .placeholders .thumbnail img.img-circle { border: 1px solid #e6e6e6;
     display: inline-block;
     margin-bottom: 2px;
     padding: 6px;
-    width: 88px;}
+    width: 88px;
+    background-color: #fff;
+  }
   .placeholders .thumbnail .caption {
     color: #676767;
     padding: 0;
@@ -184,6 +186,10 @@ body {
 .main {
   padding: 20px;
 }
+
+.placeholders .thumbnail img.chooseparenticon { position: absolute; z-index: 1000; top: 64px; right: 6px; width: 17px; height: 17px; border: 0; padding: 0; margin: 0;}
+.placeholders .thumbnail img.dontchooseparenticon { position: absolute; z-index: -1; top: 30px; right: 4px; width: 17px; height: 17px;border: 0; padding: 0; margin: 0;}
+
 @media (min-width: 768px) {
   .main {
     padding:0;
