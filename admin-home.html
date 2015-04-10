@@ -114,7 +114,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn btn-lg btn-block" type="button">Add new Group</button>
+                    <button class="btn btn-lg btn-block" data-toggle="modal" data-target="#newgroupModal" type="button">Add new Group</button>
                   </div>
 
                   <a href="#" class="emailinvite">Email me the invite instruction for printing</a>
@@ -487,7 +487,7 @@
       //   }
       // });
       
-      
+      var peopleselected = 0;
       
       $('div.thumbnail img.img-circle').click( function(event) {
         // alert(e.find('input').checked)
@@ -505,13 +505,27 @@
               if (target.attr('class')=='chooseparenticon') {
                 target.removeClass( "chooseparenticon" ).addClass( "dontchooseparenticon" )
                 target.attr('src','img/unchooseparenticon.png');
+                peopleselected--;
+                $('span.peopleselected span').text(peopleselected);
               }
               else if(target.attr('class')=='dontchooseparenticon'){
                 target.removeClass( "dontchooseparenticon" ).addClass( "chooseparenticon" )
                 target.attr('src','img/chooseparenticon.png');
+                peopleselected++;
+                $('span.peopleselected span').text(peopleselected);
               }
           }
         }
+      });
+
+      $('a.selectall').click( function(event) {
+        peopleselected = 0;
+        $( "img.dontchooseparenticon" ).each(function() {
+          $( this ).removeClass( "dontchooseparenticon" ).addClass( "chooseparenticon" )
+          $( this ).attr('src','img/chooseparenticon.png');
+          peopleselected++;
+        });
+        $('span.peopleselected span').text(peopleselected);
       });
       
       
