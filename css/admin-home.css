@@ -287,6 +287,7 @@ text-align: center;
 .modal-content .modal-header {
   border-bottom: 1px solid #dcd7d7;padding: 10px;
 }
+
 .modal-content .modal-header button.close {
     background: none repeat scroll 0 0 transparent;
     border: 0 none;
@@ -305,6 +306,52 @@ text-align: center;
     background: none;
     padding: 7px;
 }
+
+#newgroupModal .modal-content .modal-body {
+    padding: 0px 0px 0;
+}
+
+
+#newgroupModal .taphereyourgroupname { background: #dcf0f8; text-align: center;}
+#newgroupModal .taphereyourgroupname input {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #dedede;
+  border-radius: 0;
+  margin: 10px auto;
+}
+#newgroupModal .peopleselected {
+  color: #4d4b4b;
+}
+#newgroupModal .peopleselected span { font-size: 20px; font-weight: 800;}
+#newgroupModal .selectall { float: right; padding:6px 0 6px 23px; background: url(../img/chooseparenticon.png) no-repeat left center;}
+#newgroupModal .peopleselectbar { padding: 5px 15px 15px;}
+
+#newgroupModal .thumbnail { background: none; border: 0; text-align: center; margin-bottom: 25px; padding: 0; position: relative; max-width: 88px; width: 88px; margin-left: auto; margin-right: auto;}
+#newgroupModal .thumbnail img.img-circle { 
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  display: inline-block;
+  margin-bottom: 2px;
+  padding: 6px;
+  width: 88px;
+  background-color: #fff;
+}
+#newgroupModal .thumbnail .caption {
+  color: #676767;
+  padding: 0;
+  text-align: center;
+  padding: 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+#newgroupModal { padding-bottom: 40px;}
+
+#newgroupModal .thumbnail img.chooseparenticon { position: absolute; z-index: 1000; top: 64px; right: 6px; width: 17px; height: 17px; border: 0; padding: 0; margin: 0;}
+#newgroupModal .thumbnail img.dontchooseparenticon { position: absolute; z-index: 1000; top: 64px; right: 6px; width: 17px; height: 17px;border: 0; padding: 0; margin: 0;}
+
+#newgroupModal .placeholder { padding: 0; }
+#newgroupModal .peoplelist { padding: 0; }
+#newgroupModal .modal-content .modal-footer { padding:20px; border-top: 1px solid #dedede;}
 
 @media (min-width: 768px) {
   .main {
@@ -537,6 +584,11 @@ text-align: center;
   .sidebar .thumbnail .caption span { font-weight: 300; }
 }
 @media (min-width: 992px) {
+  #newgroupModal .taphereyourgroupname input {
+  width: 75%;
+  }
+
+  #newgroupModal .modal-dialog { width: 680px; }
   .col-md-offset-2 {
       margin-left: 14%;
   }

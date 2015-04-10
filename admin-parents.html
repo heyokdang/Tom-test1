@@ -438,9 +438,11 @@
                 var target = $(event.target).parent().find('img#chooseparent');
                 if (target.attr('class')=='chooseparenticon') {
                   target.removeClass( "chooseparenticon" ).addClass( "dontchooseparenticon" )
+                  target.attr('src','img/unchooseparenticon.png');
                 }
                 else if(target.attr('class')=='dontchooseparenticon'){
                   target.removeClass( "dontchooseparenticon" ).addClass( "chooseparenticon" )
+                  target.attr('src','img/chooseparenticon.png');
                   $('.titlehead a#rmparent').addClass('red')
                 }
             }

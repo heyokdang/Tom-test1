@@ -17,7 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="css/admin-home.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
+    <link href='https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,800,600,700' rel='stylesheet' type='text/css'>
     <!-- Paginations -->
     <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.13.0.css">
 
@@ -270,7 +270,7 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-lg btn-block" type="button">Add new Group</button>
+              <button class="btn btn-lg btn-block" data-toggle="modal" data-target="#newgroupModal" type="button">Add new Group</button>
             </div>
             <a href="#" class="emailinvite">Email me the invite instruction for printing</a>
           </div>
@@ -285,7 +285,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/x.png"></span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">Create New Class</h4>
+              <h4 class="modal-title" id="gridSystemModalLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create New Class</h4>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -339,16 +339,126 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="img/x.png"></span></button>
-              <h4 class="modal-title" id="gridSystemModalLabel">Create New Group</h4>
+              <h4 class="modal-title" id="gridSystemModalLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create New Group</h4>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
                 <div class="row">
                   <form style="margin:0;padding:0">
-                  <div class="col-md-6"><input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"></div>
-                  <div class="col-md-6"><input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"></div>
-                  <div class="col-md-6"><input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"></div>
-                  <div class="col-md-6"><input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"></div>
+                    <div class="col-md-12 taphereyourgroupname clearfix"><input type="text" class="form-control" id="exampleInputName2" placeholder="Tap Here to name your group"></div>
+                    <div class="col-md-12 peopleselectbar"><span class="peopleselected"><span>4</span> People selected</span><a class="selectall" href="#">Select All</a></div>
+                    <div class="col-md-12 peoplelist">
+
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      <div class="col-xs-4 col-sm-3 col-md-2 placeholder">
+                        <div class="thumbnail">
+                          <img alt="Sample Image" src="img/user1.png" class="img-circle">
+                          <div class="caption">
+                              Michael J
+                          </div>
+                          <img id="chooseparent" src="img/unchooseparenticon.png" class="dontchooseparenticon">
+                        </div>
+                      </div>
+                      
+                    </div>
                   </form>
                 </div>
               </div>
@@ -376,6 +486,35 @@
       //     $("div#newmessageModal div.modal-dialog").css( "margin-top", ($( window ).height() - $("div#newmessageModal div.modal-dialog").height())/2 + 'px'  );
       //   }
       // });
+      
+      
+      
+      $('div.thumbnail img.img-circle').click( function(event) {
+        // alert(e.find('input').checked)
+        // alert(event.target.find('input'));
+        if ( $(event.target).parent().attr('class')=='thumbnail' ){
+          // if ( $(event.target).parent().find('input').attr('class')=='checkbox' ){
+            // if( $(event.target).parent().find('input').prop( "checked")==true ){
+              // $(event.target).parent().find('input').prop( "checked",false);
+            // }else{
+              // $(event.target).parent().find('input').prop( "checked",true);
+            // }
+          // }
+          if ($(event.target).parent().find('img#chooseparent')) {
+              var target = $(event.target).parent().find('img#chooseparent');
+              if (target.attr('class')=='chooseparenticon') {
+                target.removeClass( "chooseparenticon" ).addClass( "dontchooseparenticon" )
+                target.attr('src','img/unchooseparenticon.png');
+              }
+              else if(target.attr('class')=='dontchooseparenticon'){
+                target.removeClass( "dontchooseparenticon" ).addClass( "chooseparenticon" )
+                target.attr('src','img/chooseparenticon.png');
+              }
+          }
+        }
+      });
+      
+      
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
