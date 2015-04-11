@@ -163,10 +163,11 @@ body {
  * Main content
  */
 
-   .placeholders {}
+  .placeholders {}
 
   .placeholders .thumbnail { background: none; border: 0; text-align: center; margin-bottom: 35px; padding: 0; float: left; position: relative;}
-  .placeholders .thumbnail img.img-circle { border: 1px solid #e6e6e6;
+  .placeholders .thumbnail img.img-circle { 
+    border: 1px solid #e6e6e6;
     display: inline-block;
     margin-bottom: 2px;
     padding: 6px;
