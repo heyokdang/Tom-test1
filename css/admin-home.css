@@ -408,6 +408,35 @@ text-align: center;
   padding-left: 10px;
   padding-right: 15px;
 }
+
+
+#invitemoreparentsModal {}
+#invitemoreparentsModal .parentlis {width:100%; height:92px; background:#eee; border-radius: 4px; }
+#invitemoreparentsModal .parentlis div {}
+#invitemoreparentsModal .parentlis h4 {
+  color: #fff;
+  font-size: 15px;
+  margin: 0;
+  background: #006cb0;
+  padding: 5px 5px 5px 10px;
+}
+#invitemoreparentsModal .parentlis h5 {
+  color: #666666;
+    margin: 0;
+    padding: 5px 5px 0px 10px;
+}
+#invitemoreparentsModal .parentlis p { margin:0; color: #928989; font-size: 12px; padding: 5px 5px 5px 10px; line-height: 1.2em}
+#invitemoreparentsModal .ch_element.ch_wrapper { border: 1px solid #006cb0; border-radius: 4px; margin: 0 auto; width: 100% !important; margin-bottom:20px;}
+#invitemoreparentsModal .ch_element.ch_wrapper .ch_normal { width: 100% !important; }
+#invitemoreparentsModal .ch_element.ch_wrapper .ch_hover { width: 100% !important; background: #001623 !important}
+#invitemoreparentsModal .col-md-3 { padding-left: 10px; padding-right: 10px; }
+#invitemoreparentsModal .col-xs-6 { padding-left: 10px; padding-right: 10px; }
+#invitemoreparentsModal .col-sm-4 { padding-left: 10px; padding-right: 10px; }
+#invitemoreparentsModal .row { margin: 8px -10px 10px }
+#invitemoreparentsModal .contenthover a { display: block; padding: 13px 10px 13px 38px; text-align: left; text-transform: capitalize; color: #fff; font-size: 13px; text-decoration: none;}
+#invitemoreparentsModal .contenthover a.edit { background: url(../img/editicon.png) no-repeat 15px center;}
+#invitemoreparentsModal .contenthover a.trash { background: url(../img/trashicon.png) no-repeat 15px center;}
+
 @media (min-width: 768px) {
   .main {
     padding:0;
@@ -415,6 +444,7 @@ text-align: center;
 }
 
 @media (max-width: 767px) {
+  #invitemoreparentsModal .row { margin: 8px -15px 10px }
   #newmessageModal .modal-footer { padding-right: 15px; }
   #newmessageModal .col-md-7,
   #newmessageModal .col-md-5 { margin-left: -15px; margin-right: -15px; }
@@ -650,6 +680,9 @@ text-align: center;
   width: 75%;
   }
   #newmessageModal .modal-dialog {
+    width: 680px;
+  }
+  #invitemoreparentsModal .modal-dialog {
     width: 680px;
   }
   #newgroupModal .modal-dialog { width: 680px; }
