@@ -139,14 +139,59 @@ body {
   padding: 20px 0 20px 25px;
   display: block;
 }
-.pagination { background: #ececec; margin-top: 38px}
-.pagination li.prev {}
+
+#pagination-demo { width: 100%; }
+ul.menuitems5 {}
+ul.menuitems3 {}
+ul.menuitems5 li { width: calc(100% / 5);}
+
+ul.menuitems3 li { width: calc(100% / 3);}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #343f4b;
+  background-color: #ececec;
+  border-color: #ececec;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #343f4b;
+  cursor: pointer;
+  background-color: #ececec;
+  border-color: #ececec;
+}
+#pagination-demo li { 
+  box-sizing: border-box;
+  float: left;
+}
+
+.pagination { background: #ececec; margin-top: 38px; position: relative;}
+.pagination li.prev {
+  left: 0;
+    position: absolute;
+    top: 0;
+    width: 33px !important;
+    z-index: 111;
+}
 .pagination li.prev a, 
 .pagination li.next a { border: 0; padding:0; }
-.pagination li.next {}
+.pagination li.next {
+  position: absolute;
+    right: 0;
+    top: 0;
+    width: 33px !important;
+    z-index: 111;
+}
 .pagination li.next a { }
 .pagination li.active a { color: #343f4b;}
-.pagination > li > a, .pagination > li > span { background: none; border: 0; padding: 6px 36px; color: #d0d1d2; font-weight: 700;}
+.pagination > li > a, .pagination > li > span { background: none; border: 0; padding: 6px 0px 7px; color: #d0d1d2; font-weight: 700; width: 100%; text-align: center; margin: 0;}
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus { background: none; }
 .pagination > li > a:hover,
 .pagination > li > span:hover,
@@ -256,7 +301,8 @@ body {
  * admin home daskboard 
  */
 
-#pagination-demo {  }
+
+
 .main .page-header {
   margin-top: 0;
 }
